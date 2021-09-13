@@ -39,10 +39,10 @@ contract supplycchain {
     modifier onlyTransporter(){
          
           require(msg.Publickey==transporteurPubkey,"tu n'es pas transporteur");
-        _;
-
-                          tvm.accept ();
-    }
+        
+                       tvm.accept ();
+                _;
+  }
 
             
             mapping(uint=>Item) public AllItems;
